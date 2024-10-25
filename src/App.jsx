@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Partners from './components/Partners'
 import Features from './components/Features'
+import HowDoesItWork from './components/HowDoesItWork'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Hero/>
       <Partners/>
       <Features/>
+      <HowDoesItWork/>
     </main>
     </>
   )
