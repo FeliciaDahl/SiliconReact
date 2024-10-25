@@ -6,6 +6,7 @@ import Features from './components/Features'
 import HowDoesItWork from './components/HowDoesItWork'
 import InfoCardsDesktop from './components/InfoCardsDesktop'
 import Testimonials from './components/Testimonials'
+import Faq from './components/Faq'
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
       <HowDoesItWork/>
       <InfoCardsDesktop/>
       <Testimonials/>
+      <section aria-label="frequently asked questions" class="faq">
+      <Faq/>
+      </section>
     </main>
     </>
   )
