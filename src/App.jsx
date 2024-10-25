@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Partners from './components/Partners'
 import Features from './components/Features'
 import HowDoesItWork from './components/HowDoesItWork'
+import InfoCardsDesktop from './components/InfoCardsDesktop'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Partners/>
       <Features/>
       <HowDoesItWork/>
+      <InfoCardsDesktop/>
     </main>
     </>
   )
