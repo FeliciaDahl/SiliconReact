@@ -5,6 +5,7 @@ import Partners from './components/Partners'
 import Features from './components/Features'
 import HowDoesItWork from './components/HowDoesItWork'
 import InfoCardsDesktop from './components/InfoCardsDesktop'
+import Testimonials from './components/Testimonials'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Features/>
       <HowDoesItWork/>
       <InfoCardsDesktop/>
+      <Testimonials/>
     </main>
     </>
   )

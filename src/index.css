@@ -539,12 +539,12 @@ header .container {
 }
 /* || DESKTOP-ONLY */
 /* || REVIEWS */
-.rating-card {
+.testimonial-card {
   position: relative;
   width: 100%;
   background-color: var(--clr-bg-light);
 }
-.rating-cards {
+.testimonial-cards {
   width: 100%;
   margin: 0 auto;
   height: 500px;
@@ -554,7 +554,7 @@ header .container {
   place-items: center;
 }
 
-.h2-rating {
+.h2-testimonial {
   height: 360px;
 }
 
@@ -571,7 +571,7 @@ header .container {
   border-radius: 6px;
 }
 
-.rating-box {
+.testimonial-box {
   height: 350px;
   padding: 1rem;
   align-items: center;
