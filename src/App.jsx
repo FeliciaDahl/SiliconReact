@@ -7,6 +7,7 @@ import HowDoesItWork from './components/HowDoesItWork'
 import InfoCardsDesktop from './components/InfoCardsDesktop'
 import Testimonials from './components/Testimonials'
 import Faq from './components/Faq'
+import ContactCards from './components/ContactCards'
 
 function App() {
 
@@ -21,8 +22,13 @@ function App() {
       <HowDoesItWork/>
       <InfoCardsDesktop/>
       <Testimonials/>
-      <section aria-label="frequently asked questions" class="faq">
+      <section aria-label="frequently asked questions" className="faq">
+      <div className="container">
+      <div className="desktop-layout">
       <Faq/>
+      <ContactCards/>
+      </div>
+      </div>
       </section>
     </main>
     </>

@@ -31,29 +31,21 @@ const Faq = () => {
     ])
   return (
  
-<div class="container">
-<div class="desktop-layout">
 
-<div class="faq-heading">
-    <h2 class="h2-25 pb-1">Any questions? Check out the FAQs</h2>
-    <p class="bd-text f-size-18 pb-1">Still have unanswered questions and need
+<>
+<div className="faq-heading">
+    <h2 className="h2-25 pb-1">Any questions? Check out the FAQs</h2>
+    <p className="bd-text f-size-18 pb-1">Still have unanswered questions and need
         to get in touch?</p>
     </div>
 
-        <div class="faq-accordion">
+        <div className="faq-accordion">
             {
                 accordionItems.map((item, index)=> (<FaqAccordionItems key={index} item={item}/>))
             }
         </div>
+</>
 
-
-
-     
-
-       
-    </div>
-</div>
-       
   )
 }
 

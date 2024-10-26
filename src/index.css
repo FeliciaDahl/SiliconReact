@@ -22,6 +22,11 @@
   --clr-circle-btn: #ffff;
   --clr-btn-apps: #0b0f19;
 
+  --clr-success: #22C55E;
+  --clr-error: #EF4444;
+  --clr-warning:#FFBA08;
+  --clr-info: #4C82F7;
+
   --clr-bg-accordion: #ffff;
 
   --container-padding: 1rem;
@@ -669,27 +674,22 @@ header .container {
   border: 1px solid var(--clr-br);
   padding: 1rem;
 }
-.call {
+.contact {
   text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+    transition: var(--transition-time);
+  }
+}
+.call-color{
   color: var(--crl-primary);
-
-  &:hover,
-  &:focus-visible {
-    text-decoration: underline;
-    transition: var(--transition-time);
-  }
+}
+.chat-color {
+  color: var(--clr-success);
 }
 
-.chat {
-  text-decoration: none;
-  color: #22c55e;
-
-  &:hover,
-  &:focus-visible {
-    text-decoration: underline;
-    transition: var(--transition-time);
-  }
-}
 
 .btn-contact {
   font-weight: 600;

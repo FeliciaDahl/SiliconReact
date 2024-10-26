@@ -1,16 +1,16 @@
 import React from 'react'
 
-const FaqAccordionItems = ({item}) => {
+const FaqAccordionItems = ({ item }) => {
     return (
-    <div class="faq-card">
-        <div class="question">
+    <div className="faq-card">
+        <div className="question">
             <h3>{item.question}</h3>
-            <button class="btn-circle">
-                <i class="fa-solid fa-chevron-down"></i>
+            <button className="btn-circle">
+                <i className="fa-solid fa-chevron-down"></i>
             </button>
         </div>
-        <div class="answer">
-            <div class="expand">
+        <div className="answer">
+            <div className="expand">
                 <p>{item.answer}</p>
             </div>
         </div>
