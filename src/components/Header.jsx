@@ -16,6 +16,7 @@ const Header = () => {
 
         <nav id="nav-f">
             <a className="nav-features" href="features.html">Features</a>
+            <a className="nav-features" href="features.html">Contact</a>
         </nav>
 
         <div className="btn-toggle">

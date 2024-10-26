@@ -204,6 +204,7 @@ header .container {
   display: none;
 }
 .nav-features {
+  padding-left: 1rem;
   text-decoration: none;
   color: var(--clr-nav);
   font-weight: 600;
@@ -818,7 +819,7 @@ header .container {
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
   }
-  .mobile-button {
+  .mobile-btn {
     display: none;
   }
   .newsletter {
