@@ -1,8 +1,7 @@
 import React from 'react'
 
-export const SubscribeForm = () => {
+const SubscribeForm = () => {
   return (
-
     <form>
     <div className="email-form">
     <input className="input-email" type="email" name="email" required placeholder="✉︎ Your email"/>
@@ -11,3 +10,6 @@ export const SubscribeForm = () => {
 </form>
   )
 }
+
+export default SubscribeForm
+

@@ -4,6 +4,7 @@ const Hero = () => {
   return (
   
 <section aria-label="hero" className="hero">
+
 <div className="container">
 
 <div className="hero-h1 pt-2">
@@ -38,6 +39,7 @@ const Hero = () => {
     <img className="img-back" src="./images/hero/hero-phone-back.svg" alt="Iphone in background" />
 </div>
 </div>
+
 
 </section>
 

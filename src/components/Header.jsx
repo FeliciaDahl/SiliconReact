@@ -1,22 +1,23 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
    <>
   
     <header aria-label="main-navigation">
-
+   
     <div className="container">
 
-        <a href="index.html">
+        <Link className='logo' to="/">
             <img className="show-light" src="./images/header/logo-header.svg" alt="Silicon bank logo" />
             <img className="show-dark" src="./images/header/logo-header-dark.svg" alt="Silicon bank logo" />
-        </a>
+        </Link>
         
 
         <nav id="nav-f">
-            <a className="nav-features" href="features.html">Features</a>
-            <a className="nav-features" href="features.html">Contact</a>
+            <NavLink className="nav-link" to="/feature">Features</NavLink>
+            <NavLink className="nav-link" to="/contact">Contact</NavLink>
         </nav>
 
         <div className="btn-toggle">
@@ -29,9 +30,9 @@ const Header = () => {
         </div>
 
         <div id="sign-in">
-            <a className= "btn btn-sign-in" href="sign-in.html"><img src="./images/header/icon-signin.svg" alt="Sign-in button" />
+            <NavLink className= "btn btn-sign-in" to="/signin"><img src="./images/header/icon-signin.svg" alt="Sign-in button" />
              <span className="f-size-14">Sign in / up</span>
-            </a>
+            </NavLink>
         </div>
 
         <nav>
@@ -41,6 +42,7 @@ const Header = () => {
         </button>
     </nav>
 </div>
+
 
 </header>
    </>
