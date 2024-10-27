@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import DarkModeSwitch from './DarkModeSwitch'
+import NavBar from './NavBar'
 
 const Header = () => {
   return (
@@ -15,11 +16,11 @@ const Header = () => {
             <img className="show-dark" src="./images/header/logo-header-dark.svg" alt="Silicon bank logo" />
         </Link>
         
-
         <nav id="nav-f">
             <NavLink className="nav-link" to="/feature">Features</NavLink>
             <NavLink className="nav-link" to="/contact">Contact</NavLink>
         </nav>
+       
 
         <div className="btn-toggle">
             <span id="dark-mode" className="label">Dark mode</span>
@@ -32,12 +33,7 @@ const Header = () => {
             </NavLink>
         </div>
 
-        <nav>
-        <button className="btn-nav">
-            <img className="show-light" src="./images/header/nav-btn.svg" alt="button navigation" />
-            <img className="show-dark" src="./images/header/nav-btn-dark.svg" alt="button navigation" />
-        </button>
-    </nav>
+        <NavBar/>
 </div>
 
 

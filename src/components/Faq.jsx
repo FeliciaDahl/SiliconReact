@@ -29,6 +29,8 @@ const Faq = () => {
     },
 
     ])
+
+    
   return (
  
 
@@ -38,7 +40,6 @@ const Faq = () => {
     <p className="bd-text f-size-18 pb-1">Still have unanswered questions and need
         to get in touch?</p>
     </div>
-
         <div className="faq-accordion">
             {
                 accordionItems.map((item, index)=> (<FaqAccordionItems key={index} item={item}/>))
