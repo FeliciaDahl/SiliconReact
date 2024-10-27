@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import DarkModeSwitch from './DarkModeSwitch'
 
 const Header = () => {
   return (
@@ -22,11 +23,7 @@ const Header = () => {
 
         <div className="btn-toggle">
             <span id="dark-mode" className="label">Dark mode</span>
-   
-         <label className="switch" aria-labelledby="darkmode switch">
-            <input type="checkbox" id="darkmode-switch" />
-                <span className="slider"></span>
-        </label>
+        <DarkModeSwitch/>
         </div>
 
         <div id="sign-in">

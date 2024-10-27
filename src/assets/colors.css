@@ -1,0 +1,60 @@
+:root  {
+    --clr-bg: #ffff;
+    --clr-bg-light: #f3f6ff;
+  
+    --crl-primary: #6366f1;
+    --crl-secondary: #eff2fc;
+    --clr-white: #ffff;
+    --crl-light: #f3f6ff;
+    --clr-dark: #0b0f19;
+  
+    --clr-br: #e2e5f1;
+    --clr-f-br: #d4d7e5;
+    --clr-ph: #b4b7c9;
+  
+    --clr-h-text: #0b0f19;
+    --clr-bd-text: #565973;
+    --clr-m-text: #9397ad;
+    --clr-nav: #33354d;
+  
+    --clr-nav-btn: #ffff;
+    --clr-circle-btn: #ffff;
+    --clr-btn-apps: #0b0f19;
+  
+    --clr-success: #22C55E;
+    --clr-error: #EF4444;
+    --clr-warning:#FFBA08;
+    --clr-info: #4C82F7;
+  
+    --clr-bg-accordion: #ffff;
+
+    .show-light {
+        display: block;
+      }
+      .show-dark {
+        display: none;
+      }
+}
+
+[data-theme="dark"] {
+
+    --clr-bg: rgb(11, 15, 25);
+    --clr-bg-light: rgba(255, 255, 255, 0.04);
+    --clr-bg-accordion: rgba(255, 255, 255, 0.04);
+  
+    --clr-h-text: rgb(255, 255, 255);
+    --clr-bd-text: rgba(255, 255, 255, 0.07);
+    --clr-br: rgba(255, 255, 255, 0.015);
+    --clr-nav: rgb(255, 255, 255);
+  
+    --clr-circle-btn: rgba(255, 255, 255, 0.05);
+    --clr-btn-apps:rgb(255, 255, 255);
+    --clr-nav-btn: none;
+
+    .show-light {
+        display: none;
+      }
+      .show-dark {
+        display: block;
+      }
+}

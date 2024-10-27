@@ -1,5 +1,7 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './assets/colors.css'
+import './assets/index.css'
 import Home from './views/Home'
 import Contact from './views/Contact'
 import Feature from './views/Feature'
