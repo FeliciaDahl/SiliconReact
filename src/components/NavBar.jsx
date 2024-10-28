@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
-    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const toggleDropdown = () => {
-        setDropdownOpen(!isDropdownOpen);
+        setIsDropdownOpen(prev => !prev);           //or:    setIsDropdownOpen(!isDropdownOpen); ??
     };
 
     return (
@@ -17,10 +17,10 @@ const NavBar = () => {
 
             {isDropdownOpen && (
                 <div className="dropdown-menu">
-                    <NavLink className="drop-link" to="/"><p>Home</p></NavLink>
-                    <NavLink className="drop-link" to="/feature"><p>Features</p></NavLink>
-                    <NavLink className="drop-link" to="/contact"><p>Contact</p></NavLink>
-                    <NavLink className="drop-link" to="/signin"><p>Sign In</p></NavLink>
+                    <NavLink className="drop-link" to="/">Home</NavLink>
+                    <NavLink className="drop-link" to="/feature">Features</NavLink>
+                    <NavLink className="drop-link" to="/contact">Contact</NavLink>
+                    <NavLink className="drop-link" to="/signin">Sign In</NavLink>
                 </div>
             )}
         </nav>

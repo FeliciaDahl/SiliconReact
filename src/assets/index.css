@@ -251,9 +251,12 @@ header .container {
  
   border: none;
   background-color: var(--clr-nav-btn);
+  border-radius: 5px;
 
-  &:hover {
+  &:hover, &:focus-visible {
+    background-color: var(--crl-primary); 
     cursor: pointer;
+  
   }
 }
 .drop-navigation {
@@ -266,23 +269,29 @@ header .container {
   right: 5%;
   top:100%;
   background-color: var(--clr-bg);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(122, 120, 120, 0.1); 
+
   z-index: 100000;
   border: 1px solid var(--clr-br); 
-  border-radius: .2em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  
+
+
 }
 
 .drop-link {
   display: block; 
-  padding: 8px 16px; 
-  box-shadow: 0 4px 8px rgba(122, 120, 120, 0.1); 
+  padding: .7rem; 
   text-decoration: none; 
+  color: var(--clr-nav);
   text-align: right;
- 
-  &:hover, &:focus-visible {
+  font-weight: 500;
+  border-radius: 5px;
+
+    &:hover, &:focus-visible {
   background-color: var(--crl-primary);  
   }
+
 }
 
 
@@ -575,6 +584,17 @@ header .container {
   background-color: var(--clr-bg-accordion);
   border-radius: 8px;
 }
+.star {
+  font-size: 24px; 
+}
+
+.filled {
+  color: var(--clr-warning)
+}
+
+.empty {
+  color: var(--clr-m-text)
+}
 
 /* || FAQ */
 .faq {
@@ -761,6 +781,8 @@ header .container {
   .p-hero {
     text-align: left;
   }
+
+  
   /* || PARTNERS */
   #brand-icons {
     display: block;
@@ -862,12 +884,16 @@ header .container {
   .p-hero {
     text-align: left;
   }
+
   .app-btn {
     display: flex;
+    width: 60%;
   }
 
   .btn-discover {
-    padding-top: 4rem;
+    justify-content: left;
+    margin-top: 5rem;
+ 
   }
   /* || PARTNERS */
   #brand-icons,

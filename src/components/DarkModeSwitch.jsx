@@ -10,6 +10,7 @@ const DarkModeSwitch = () => {
        
         document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
         localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        
     }, [isDarkMode]); 
 
     const toggleDarkMode = () => {

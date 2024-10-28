@@ -1,35 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import FaqAccordionItems from './FaqAccordionItems'
 
 const Faq = () => {
-    const [accordionItems, setAccordionItems] = useState([
-    {
-        question:"Is any of my personal information stored in the App?", 
-        answer:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, omnis quia natus delectus ducimus non officiis. Corporis fugit!"
-    },
-    {
-        question:"What formats can I download my transaction history in?", 
-        answer:"Quis, omnis quia natus delectus ducimus non officiis."
-    },
-    {
-        question:"Can I schedule future transfers?", 
-        answer:"Quis, omnis quia natus delectus ducimus non officiis. Corporis fugit ab dolore!"
-    },
-    {
-        question:"When can I use Banking App services?", 
-        answer:"Quis ipsum dolor sit amet consectetur adipisicing elit. Quis, omnis quia natus delectus ducimus non officiis. Corporis fugit ab dolore!"
-    },
-    {
-        question:"Can I create my own password that is easy for me to remember?", 
-        answer:"Quia natus delectus ducimus non officiis. Corporis fugit ab dolore!"
-    },
-    {
-        question:"What happens if I forget or lose my password?", 
-        answer:"Quia natus delectus ducimus non officiis. Corporis fugit ab dolore! Delectus ducimus non officiis."
-    },
+    const [accordionItems, setAccordionItems] = useState([])
 
-    ])
+    const fetchData =  async () => {
+        const res = await fetch ('https://win24-assignment.azurewebsites.net/api/faq')
+        const data = await res.json()
+        setAccordionItems(data)
+    } 
 
+useEffect(() => {
+    fetchData()
+}, [])
     
   return (
  
@@ -42,7 +25,7 @@ const Faq = () => {
     </div>
         <div className="faq-accordion">
             {
-                accordionItems.map((item, index)=> (<FaqAccordionItems key={index} item={item}/>))
+                accordionItems.map((item)=> (<FaqAccordionItems key={item.id} item={item}/>))
             }
         </div>
 </>

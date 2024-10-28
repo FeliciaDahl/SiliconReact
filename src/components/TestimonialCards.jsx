@@ -1,4 +1,5 @@
 import React from 'react'
+import StarRating from './StarRating'
 
 const TestimonialCards = ({item}) => {
   return (
@@ -7,14 +8,17 @@ const TestimonialCards = ({item}) => {
     <div className="apo-icon">
         <img src="./images/dt-info/apo-icon.svg" alt="aprostrophe sign" />
     </div>
-    <img className="pt-2 pb-1" src={item.imageStars} alt={item.imageStarsAlt} />
-    <p className="bd-text pt-2">{item.content}</p>
+  
+    <div className="pt-1 ">
+    <StarRating rating={item.starRating} /> 
+   </div>
+    <p className="bd-text pt-2">{item.comment}</p>
 
     <div className="flex-1 pt-2">
-        <img src={item.profileImage} alt={item.profileImage} />
+        <img src={item.avatarUrl} alt="profile picture" />
         <div>
-            <h5>{item.name}</h5>
-            <p className="bd-text f-size-14">{item.profession}</p>
+            <h5>{item.author}</h5>
+            <p className="bd-text f-size-14">{item.jobRole}</p>
         </div>
     </div>
 </div>
