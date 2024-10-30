@@ -2,13 +2,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './assets/colors.css'
 import './assets/index.css'
+import './assets/contact.css'
+
 import Home from './views/Home'
 import Contact from './views/Contact'
 import Feature from './views/Feature'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import SignIn from './views/SignIn'
-import NavBar from './components/NavBar'
+
 
 
 
