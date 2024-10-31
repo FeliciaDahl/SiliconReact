@@ -1,12 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import ContactUs from '../components/ContactUs'
 
 const Contact = () => {
   return (
     <>
+      <div className='container'>
     <div className="bg-container">
 
-   <div className='container'>
+ 
     <nav className='contact-nav flex-1 pt-2'>
     
     <i class="fa-regular fa-house"></i>
@@ -15,35 +17,46 @@ const Contact = () => {
     <NavLink className="contact-links-top" to="/contact">Contact</NavLink>
     </nav>
 <div className="view-contact pt-1 ">
+  <div className="desktop">
   <h1 className='contact-header pb-2'>Contact Us</h1>
+  <ContactUs/>
+</div>
+<div className="consultation-card">
+  <h2 className='h2-32 '>Get Online Consultation</h2>
 
-  <div className='contact-email flex-1 pt-1'>
-
-      <div className="contact-icon">
-        <i className='icon-color' class="fa-regular fa-envelope"></i>
-      </div>
-      <div className="icon-content pb-2">
-        <h2 className='pb-1'>Email Us</h2>
-        <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
-        <a className="contact-link flex-1 pt-2" href="#">Leave a message<i className="fa-sharp fa-solid fa-arrow-right"></i></a>
-      </div>
-      </div>
-
-  <div className='contact-email flex-1 pt-1'>
-
-      <div className= "contact-icon">
-        <i className='icon-color' class="fa-regular fa-users-medical"></i>
-      </div>
-      <div className="icon-content">
-        <h2 className='pb-1'>Careers</h2>
-        <p>We're always looking for new people to be a part of our growing team. Are you intrested?</p>
-        <a className="contact-link flex-1 pt-2" href="#">Send an application<i className="fa-sharp fa-solid fa-arrow-right"></i></a>
-      </div>
+<div className="consultation-form"></div>
+<form noValidate>
+<div className="pt-2">
+  <label className='sb' >Full name<input className='consulation-input'  type="text" name="fullName" /></label>
+ </div>
+ <div className="pt-2">
+  <label className='sb' >Email adress<input className='consulation-input' type="email" name="email" />  </label>
   </div>
+  <div className="pt-2">
+  <label className='sb' >Specialist
+<select className=' select consulation-input pb-2' name="selectedSpecialist">
+<option value="" disabled selected></option>
+      <option  value="investment">Investment Advisor</option>
+      <option value="business">Business Banking Consultant</option>
+      <option value="technical">Technical support</option>
+</select>
+</label> 
+</div>
+<div className='pt-2'></div> 
+<button className='btn btn-appointment'>
+  Make an appointment
+</button>
+</form>
+  
 </div>
 
+
+</div>
+ </div>
+<img src="../images/view-contact/map.svg" alt="map" />
    </div>
-   </div>
+  
+
    </>
   )
 }
