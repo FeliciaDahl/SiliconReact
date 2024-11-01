@@ -1,7 +1,7 @@
 
 .bg-container {
     background-color: var(--clr-bg-light);
-    margin: 0;
+   
 
 }
 
@@ -22,7 +22,6 @@
   }
 }
 .view-contact {
-    display: grid;
     place-items: center;
     margin: 0 auto;
     justify-content: center;
@@ -32,13 +31,7 @@
     font-weight: 800;
 }
 
-.contact-email {
-    width: 400px;
-    
-}
-
 .contact-icon {
-    
     display: grid;
     color: var(--crl-primary);
     background-color: var(--clr-bg);
@@ -50,7 +43,6 @@
 }
 
 .contact-link {
-
     text-decoration: none;
     align-items: center;
     color: var(--crl-primary);
@@ -58,16 +50,11 @@
 
 
 .consultation-card {
-position: relative;
-display: grid;
-gap: 1rem;
-place-content: center;
-background-color: var(--clr-bg);
-border: 1px solid var(--clr-br);
-border-radius: 5px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-width: 500px;
-height: 600px;
+    background-color: var(--clr-bg-light);
+    width: 70%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
 }
 
 .consulation-input {
@@ -83,25 +70,82 @@ height: 600px;
 .btn-appointment {
     width: 90%;
 }
+
+.map {
+    width: 80%
+}
+.location{
+   
+    display: grid;
+ 
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+.social {
+    display: flex;
+    gap:1rem;
+}
 @media (min-width: 768px) { 
+
     .contact-nav {
         max-width: 720px;
     }
 
+    .view-contact{
+        max-width: 720px;
+        gap:2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;  
+    }
+
+    .consultation-card {
+        width: 100%;
+    }
 }
 
 
 @media (min-width: 1200px) {
+
     .contact-nav {
         max-width: 1300px;
     }
 
     .view-contact{
-        /* position: absolute; */
+       
+        max-width: 1300px;
+       
         display: flex;
+        flex-direction:row;
+        align-items: start;
+        justify-content: space-evenly
         
     }
     .consultation-card {
-        position: relative;
+       
+        width: 500px;
+        height: 600px;
+   
+        display: grid;
+        place-content: center;
+        gap: 2rem;
+       
+        background-color: var(--clr-bg);
+        border: 1px solid var(--clr-br);
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        padding: 2rem;
+
+    }
+
+    .contact-view-cards {
+        width: 400px;
+        
+    }
+    .bg-container {
+        height: 600px;
     }
  }
