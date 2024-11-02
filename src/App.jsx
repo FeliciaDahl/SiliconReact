@@ -30,9 +30,10 @@ function App() {
           <Route path='/signin' element={<SignIn />} />
         </Routes>
       </main>
-      <Footer />
+  <Footer />
+    
     </div>
-
+ 
   </BrowserRouter>
   )
 }
