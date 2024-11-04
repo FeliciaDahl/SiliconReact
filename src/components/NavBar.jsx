@@ -8,6 +8,9 @@ const NavBar = () => {
         setIsDropdownOpen(prev => !prev);           //or:    setIsDropdownOpen(!isDropdownOpen); ??
     };
 
+    const handleMenuClick = () => {
+        setIsDropdownOpen(false)
+    }
     return (
         <nav className='drop-navigation'>
             <button className="btn-nav" onClick={toggleDropdown}>
@@ -17,10 +20,10 @@ const NavBar = () => {
 
             {isDropdownOpen && (
                 <div className="dropdown-menu">
-                    <NavLink className="drop-link" to="/">Home</NavLink>
-                    <NavLink className="drop-link" to="/feature">Features</NavLink>
-                    <NavLink className="drop-link" to="/contact">Contact</NavLink>
-                    <NavLink className="drop-link" to="/signin">Sign In</NavLink>
+                    <NavLink className="drop-link" to="/"onClick={handleMenuClick}>Home</NavLink>
+                    <NavLink className="drop-link" to="/feature"onClick={handleMenuClick}>Features</NavLink>
+                    <NavLink className="drop-link" to="/contact"onClick={handleMenuClick}>Contact</NavLink>
+                    <NavLink className="drop-link" to="/signin"onClick={handleMenuClick}>Sign In</NavLink>
                 </div>
             )}
         </nav>

@@ -51,9 +51,9 @@
 
 .consultation-card {
     background-color: var(--clr-bg-light);
-    width: 70%;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    width: 100%;
+    padding: 2rem;
+   
 
 }
 
@@ -83,7 +83,21 @@
 .map {
     width:100%;
 }
+.adress-cards {
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+}
+.adress-card {
+    border: 1px solid var(--clr-br);
+    border-radius: 8px;
+    padding: 1rem;
 
+    &:hover, &:focus-visible {
+        background-color: var(--clr-bg-light);
+        cursor: pointer;
+    }
+}
 .info-items {
     display: flex;
     gap:1rem;
@@ -119,11 +133,46 @@
         font-size: 18px;
      }
 }
+.submitted-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
-span {
+.submitted-card{
+ 
+    background: var(--clr-bg);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+
+    i {
+        color: var(--crl-primary);
+        font-size: 7em;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    } 
+}
+
+
+.submitted-btn {
+ display: flex;
+ justify-content: flex-end;
+
+}
+
+.input-error {
+
     font-size: 12px;
-  
     color: var(--clr-error);
+
 }
 @media (min-width: 768px) { 
 
@@ -142,47 +191,13 @@ span {
     .consultation-card {
         width: 100%;
     }
-
-}
-
-.submitted-bg{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.submitted-card{
- 
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-
-    i {
-        color: var(--crl-primary);
-        font-size: 7em;
-        padding-top: 1rem;
-        padding-bottom: 2rem;
+    .map {
+        max-width: 720px;
     }
 
- 
 }
 
 
-.submitted-btn {
-
- display: flex;
- justify-content: flex-end;
-
- 
-}
 
 
 @media (min-width: 1200px) {
@@ -233,6 +248,6 @@ span {
         height: auto;
     }
    .adress-cards {
-    width: 350px;
+    width: 300px;
    }
  }

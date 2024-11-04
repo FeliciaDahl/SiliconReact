@@ -1,7 +1,5 @@
 
 import React, { useState } from 'react'
-
-
 import { useForm } from 'react-hook-form'
 
 const ConsultationForm = () => {
@@ -20,7 +18,7 @@ const ConsultationForm = () => {
 
     <div className="submitted-bg">
     <div className="submitted-card">
-      <i class="fa-sharp fa-solid fa-square-check"></i>
+      <i className="fa-sharp fa-solid fa-square-check"></i>
         <h2 className='pb-1'>Thank you for contacting us!</h2>
         <p className='pb-2'>We will reach out to you within 1-3 days!</p>
         <div className='submitted-btn'>  
@@ -64,7 +62,7 @@ if (res.ok) {
               <input className='consulation-input' type="text" {...register('name', {required: 'The name field is required',minLength: { 
               value: 3, 
               message: 'The name must be at least 3 characters long'},})}/></label>
-              <span>{errors.name && errors.name.message}</span>
+              <span className='input-error'>{errors.name && errors.name.message}</span>
           </div>
 
           <div className="pt-2">
@@ -72,7 +70,7 @@ if (res.ok) {
               <input className='consulation-input'{...register("email", {required: 'The email field is required', pattern: {
                 value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                 message: 'Please enter a valid email address'}})}/> </label>
-                <span>{errors.email && errors.email.message}</span>
+                <span className='input-error'>{errors.email && errors.email.message}</span>
           </div>
 
           <div className="pt-2">
@@ -85,7 +83,7 @@ if (res.ok) {
                 <option value="other">Other</option>
               </select>
             </label>
-            <span>{errors.select && errors.select.message}</span>
+            <span className='input-error'>{errors.select && errors.select.message}</span>
           </div>
           <div className="pt-2">
             <button  type='submit' className='btn btn-appointment'>
