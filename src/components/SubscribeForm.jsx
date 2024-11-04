@@ -4,12 +4,18 @@ const SubscribeForm = () => {
 
 const [formData, setFormData] = useState ({email: ''})
 const [submitted, setSubmitted] = useState(false)
+const [errors, setErrors] = useState (')')
 
  const handleChange =(e) => {
   const {name, value} = e.target 
   setFormData({...formData, [name]: value})
  }
 
+ const handleOk = () => {
+  setSubmitted(false)
+  setFormData({email: ''})
+
+ }
 const handleSubmit = async (e) => {
   e.preventDefault()
   
@@ -27,12 +33,21 @@ const handleSubmit = async (e) => {
   }
 
 }
+
  if(submitted) {
   return (
-    alert('Thank you for signing up on our newsletter!')
-   
-  )
- }
+
+    <div className="submitted-bg">
+    <div className="submitted-card">
+      <i className="fa-sharp fa-solid fa-square-check"></i>
+        <h2 className='pb-2'>Thank you for subscribing!</h2>
+        <div className='submitted-btn'>  
+        <button className='btn 'onClick={handleOk}>Close</button>
+        </div>
+    </div>
+</div>
+)
+}
   return (
 
     <form onSubmit={handleSubmit} noValidate >
@@ -40,7 +55,6 @@ const handleSubmit = async (e) => {
         <input className="input-email" type="email" name="email" value={formData.email} onChange= {handleChange} required placeholder="✉︎ Your email"/>
       <button className="btn btn-email" type="submit">Subscribe</button>
       </div>
-    
   </form>
 
   )

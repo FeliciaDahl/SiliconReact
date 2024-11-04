@@ -6,7 +6,7 @@ const Newsletter = () => {
   
     <div className="subscribe flex-1 pb-1">
         <img src="./images/contact/notification.svg" alt="picture of a bell"/>
-        <h3 className="h3-24">Suscribe to our newsletter</h3>
+        <h3 className="h3-24">Subscribe to our newsletter</h3>
     </div>
 
 

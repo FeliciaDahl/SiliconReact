@@ -31,7 +31,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
+{           /* /////KOLLA DIV !ANDRA INFORMATIONLIST // */}
       <div className="location pt-2 pb-2">
 
         <img className="map pb-1" src="../images/view-contact/map.svg" alt="map" />
