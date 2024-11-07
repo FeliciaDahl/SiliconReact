@@ -13,22 +13,7 @@ const ConsultationForm = () => {
   
    }
 
- if(submitted) {
-  return (
 
-    <div className="submitted-bg">
-    <div className="submitted-card">
-      <i className="fa-sharp fa-solid fa-square-check"></i>
-        <h2 className='pb-1'>Thank you for contacting us!</h2>
-        <p className='pb-2'>We will reach out to you within 1-3 days!</p>
-        <div className='submitted-btn'>  
-        <button className='btn 'onClick={handleOk}>Close</button>
-        </div>
-    </div>
-</div>
-
-)
-}
 const onSubmit = async (data) => {
 
 const res = await fetch ('https://win24-assignment.azurewebsites.net/api/forms/contact', {
@@ -49,8 +34,25 @@ if (res.ok) {
   reset()
   }
   if (!res.ok) {
-    console.log(res.status);
+    alert('Oops! Something went wrong while submitting your form. Please try again.')
+    reset()
   }
+}
+
+if(submitted) {
+  return (
+
+    <div className="submitted-bg">
+    <div className="submitted-card">
+      <i className="fa-sharp fa-solid fa-square-check"></i>
+        <h2 className='pb-1'>Thank you for contacting us!</h2>
+        <p className='pb-2'>We will reach out to you within 1-3 days!</p>
+        <div className='submitted-btn'>  
+        <button className='btn 'onClick={handleOk}>Close</button>
+        </div>
+    </div>
+</div>
+)
 }
   return (
     <>
@@ -59,15 +61,15 @@ if (res.ok) {
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
           <div className="pt-2">
             <label><h4>Full name</h4>
-              <input className='consulation-input' type="text" {...register('name', {required: 'The name field is required',minLength: { 
-              value: 3, 
-              message: 'The name must be at least 3 characters long'},})}/></label>
+              <input className='consulation-input' type='text' {...register('name', {required: 'The name field is required',pattern: {
+              value: /^(?=.*[A-Za-zÀ-ÿ]{2})(?=.*[ '-][A-Za-zÀ-ÿ]{2})[A-Za-zÀ-ÿ]{2,}([ '-][A-Za-zÀ-ÿ]{2,}){1,}$/,
+              message: 'Please enter both your first and last name, each with min 2 letters'},})}/></label>
               <span className='input-error'>{errors.name && errors.name.message}</span>
           </div>
 
           <div className="pt-2">
             <label><h4>Email adress</h4>
-              <input className='consulation-input'{...register("email", {required: 'The email field is required', pattern: {
+              <input className='consulation-input'{...register('email', {required: 'The email field is required', pattern: {
                 value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                 message: 'Please enter a valid email address'}})}/> </label>
                 <span className='input-error'>{errors.email && errors.email.message}</span>

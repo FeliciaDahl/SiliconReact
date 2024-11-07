@@ -5,7 +5,7 @@ const NavBar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const toggleDropdown = () => {
-        setIsDropdownOpen(prev => !prev);           //or:    setIsDropdownOpen(!isDropdownOpen); ??
+        setIsDropdownOpen(prev => !prev); 
     };
 
     const handleMenuClick = () => {

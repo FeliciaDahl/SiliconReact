@@ -1,38 +1,37 @@
 import React, { useState } from 'react'
+import { useForm } from 'react-hook-form'
 
 const SubscribeForm = () => {
 
-const [formData, setFormData] = useState ({email: ''})
 const [submitted, setSubmitted] = useState(false)
-const [errors, setErrors] = useState (')')
-
- const handleChange =(e) => {
-  const {name, value} = e.target 
-  setFormData({...formData, [name]: value})
- }
+const {register, handleSubmit, formState: { errors }, reset} = useForm()
 
  const handleOk = () => {
   setSubmitted(false)
-  setFormData({email: ''})
+  reset()
 
  }
-const handleSubmit = async (e) => {
-  e.preventDefault()
-  
+
+ const onSubmit = async (data) => {
+ 
   const res = await fetch ('https://win24-assignment.azurewebsites.net/api/forms/subscribe', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(formData)
+    body: JSON.stringify({email: data.email})
   })
 
   if (res.ok) {
   setSubmitted(true)
-  setFormData({email: ''})
+  reset()
   }
-
+  if (!res.ok) {
+    alert('Oops! Something went wrong while submitting your form. Please try again.')
+    reset()
+  }
 }
+
 
  if(submitted) {
   return (
@@ -48,13 +47,17 @@ const handleSubmit = async (e) => {
 </div>
 )
 }
+
   return (
 
-    <form onSubmit={handleSubmit} noValidate >
+    <form onSubmit={handleSubmit(onSubmit)} noValidate >
       <div className="email-form">
-        <input className="input-email" type="email" name="email" value={formData.email} onChange= {handleChange} required placeholder="✉︎ Your email"/>
+        <input className="input-email" placeholder="✉︎ Your email" {...register("email", {required: 'The email field is required', pattern: {
+                value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                message: 'Please enter a valid email address'}})}/>
       <button className="btn btn-email" type="submit">Subscribe</button>
       </div>
+      <span className='input-error'>{errors.email && errors.email.message}</span>
   </form>
 
   )
