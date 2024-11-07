@@ -23,11 +23,10 @@ const {register, handleSubmit, formState: { errors }, reset} = useForm()
   })
 
   if (res.ok) {
-  setSubmitted(true)
-  reset()
-  }
-  if (!res.ok) {
-    alert('Oops! Something went wrong while submitting your form. Please try again.')
+    setSubmitted(true)
+  } 
+  else {
+    alert('Oops! Something went wrong while submitting. Please try again.')
     reset()
   }
 }

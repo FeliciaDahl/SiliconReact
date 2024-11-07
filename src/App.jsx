@@ -4,12 +4,12 @@ import './assets/colors.css'
 import './assets/index.css'
 import './assets/contact.css'
 
-import Home from './views/Home'
-import Contact from './views/Contact'
-import Feature from './views/Feature'
-import Header from './components/Header'
+import Home from './pages/Home/Home'
+import Contact from './pages/Contact/Contact'
+import Feature from './pages/Feature'
+import Header from './components/Header/Header'
 import Footer from './components/Footer'
-import SignIn from './views/SignIn'
+import SignIn from './pages/SignIn'
 
 
 
@@ -30,9 +30,8 @@ function App() {
           <Route path='/signin' element={<SignIn />} />
         </Routes>
       </main>
-  <Footer />
-    
-    </div>
+        <Footer />  
+      </div>
  
   </BrowserRouter>
   )

@@ -15,7 +15,6 @@ useEffect(() => {
 }, [])
     
   return (
- 
 
 <>
 <div className="faq-heading">

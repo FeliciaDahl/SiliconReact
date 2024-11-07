@@ -8,7 +8,7 @@ const LocationItems = ({ location, onClick }) => {
     <div className="information-list">
       <div className="info-items">
         <i className="fa-light fa-location-dot"></i>
-        <p>{location.address}</p>
+        <p className='google-link'>{location.address}</p>
       </div>
       <div className="info-items">
         <i className="fa-regular fa-phone-volume"></i>

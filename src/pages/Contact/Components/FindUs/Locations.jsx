@@ -7,23 +7,23 @@ const locations = [
     name: 'Office Kentucky',
     address: (
       <Link to="https://maps.app.goo.gl/ZQCPd96ZMzoTvpiw8" target="_blank" rel="noopener noreferrer">
-        4517 Washington Ave. Manchester, Kentucky 39495
+        4517 Washington Ave. Manchester, Kentucky 39495 <i className="external fa-regular fa-arrow-up-right-from-square"></i>
       </Link>
     ),
     phone: '(406) 555-0120',
     hours: 'Mon – Fri: 9:00 am – 22:00 am, Sat – Sun: 9:00 am – 20:00 am',
-    mapImage: '../images/view-contact/Kentuckey.jpg', // Change to actual Kentucky map image
+    mapImage: '../images/view-contact/Kentuckey.jpg', 
   },
   {
     name: 'Office New Jersey',
     address: (
       <Link to="https://maps.app.goo.gl/LS8XHw22iuXt4GyB7" target="_blank" rel="noopener noreferrer">
-        2464 Royal Ln. Mesa, New Jersey 45463
+        2464 Royal Ln. Mesa, New Jersey 45463 <i className="external fa-regular fa-arrow-up-right-from-square"></i>
       </Link>
     ),
     phone: '(406) 544-0123',
     hours: 'Mon – Fri: 9:00 am – 22:00 am, Sat – Sun: 9:00 am – 20:00 am',
-    mapImage: '../images/view-contact/NewJersey.jpg', // Change to actual New Jersey map image
+    mapImage: '../images/view-contact/NewJersey.jpg', 
   },
 ];
 

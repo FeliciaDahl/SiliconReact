@@ -1,20 +1,16 @@
-
 .bg-container {
-    background-color: var(--clr-bg-light);
-   
-
+  background-color: var(--clr-bg-light);
 }
 
 .contact-nav {
-    margin: 0 auto;
-    align-items: center;
-    color: var(--clr-bd-text);
+  margin: 0 1rem;
+  align-items: center;
+  color: var(--clr-bd-text);
 }
 
-
-.contact-links-top {
-   text-decoration: none;
-   color: var(--clr-bd-text);
+.contact-link-top {
+  text-decoration: none;
+  color: var(--clr-bd-text);
   &:hover,
   &:focus-visible {
     color: var(--crl-primary);
@@ -22,232 +18,232 @@
   }
 }
 .view-contact {
-    place-items: center;
-    margin: 0 auto;
-    justify-content: center;
+  place-items: center;
+  margin: 0 1rem;
+  justify-content: center;
 }
 .contact-header {
-    font-size: 40px;
-    font-weight: 800;
+  margin: 0 1rem;
+  font-size: 40px;
+  font-weight: 800;
 }
 
 .contact-icon {
-    display: grid;
-    color: var(--crl-primary);
-    background-color: var(--clr-bg);
-    place-items: center;
-    padding: 1rem;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  display: grid;
+  color: var(--crl-primary);
+  background-color: var(--clr-bg);
+  place-items: center;
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .contact-link {
-    text-decoration: none;
-    align-items: center;
-    color: var(--crl-primary);
+  text-decoration: none;
+  align-items: center;
+  color: var(--crl-primary);
 }
 
-
 .consultation-card {
-    background-color: var(--clr-bg-light);
-    width: 100%;
-    padding: 2rem;
-   
-
+  background-color: var(--clr-bg-light);
+  width: 100%;
+  padding: 2rem;
 }
 
 .consulation-input {
-    display: grid;
-    place-content: center;
-    width: 90%;
-    font-size: 16px;
-    padding: .5em;
-    border-radius: 5px;
-    border: .5px solid var(--clr-br);
-   
+  display: grid;
+  place-content: center;
+  width: 90%;
+  font-size: 16px;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 0.5px solid var(--clr-br);
 }
 .btn-appointment {
-    width: 90%;
+  width: 90%;
 }
 
-.location{
-    display: grid;
-   place-items: center;
- 
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 0 auto;
+.location {
+  display: grid;
+  place-items: center;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
 }
 
 .map {
-    width:100%;
+  width: 100%;
 }
 .adress-cards {
- display: flex;
- flex-direction: column;
- gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .adress-card {
-    border: 1px solid var(--clr-br);
-    border-radius: 8px;
-    padding: 1rem;
+  border-radius: 8px;
+  padding: 1rem;
 
-    &:hover, &:focus-visible {
-        background-color: var(--clr-bg-light);
-        cursor: pointer;
-    }
-}
-.info-items {
-    display: flex;
-    gap:1rem;
-    padding-bottom: 1rem;
-
-    i {
-        color: var(--crl-primary);
-    }
-}
-.social-box {  
-    display: grid;
-    place-items: center;
-     width: 40px;
-    height: 40px; 
+  &:hover,
+  &:focus-visible {
     background-color: var(--clr-bg-light);
-    border-radius: 5px;
-
-  &:hover, &:focus-visible {
-
-    box-shadow: 0 4px 8px var(--crl-primary); 
     cursor: pointer;
-    
-    }
   }
+}
+
+.info-items {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+
+  i {
+    color: var(--crl-primary);
+  }
+}
+
+.adress-card a {
+  text-decoration: none;
+  color: var(--clr-bd-text);
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+     transition: var(--transition-time);
+  }
+}
+
+.external {
+  font-size: 0.6rem;
+  vertical-align: text-top;
+}
+
+.social-box {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--clr-bg-light);
+  border-radius: 5px;
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0 4px 8px var(--crl-primary);
+    cursor: pointer;
+  }
+}
 
 .social {
-    display: flex;
-    justify-content: center;
-    gap:1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 
-    a {
-        color: var(--clr-nav); 
-        font-size: 18px;
-     }
+  a {
+    color: var(--clr-nav);
+    font-size: 18px;
+  }
 }
-.submitted-bg{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.submitted-card{
- 
-    background: var(--clr-bg);
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-
-    i {
-        color: var(--crl-primary);
-        font-size: 7em;
-        padding-top: 1rem;
-        padding-bottom: 2rem;
-    } 
+.submitted-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
+.submitted-card {
+  background: var(--clr-bg);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+
+  i {
+    color: var(--crl-primary);
+    font-size: 7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
 
 .submitted-btn {
- display: flex;
- justify-content: flex-end;
-
+  display: flex;
+  justify-content: flex-end;
 }
 
 .input-error {
-
-    font-size: 12px;
-    color: var(--clr-error);
-
+  font-size: 12px;
+  color: var(--clr-error);
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+  .contact-nav {
+    max-width: 720px;
+  }
 
-    .contact-nav {
-        max-width: 720px;
-    }
+  .view-contact {
+    max-width: 720px;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 
-    .view-contact{
-        max-width: 720px;
-        gap:2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: start;  
-    }
-
-    .consultation-card {
-        width: 100%;
-    }
-    .map {
-        max-width: 720px;
-    }
-
+  .consultation-card {
+    width: 100%;
+  }
+  .map {
+    max-width: 720px;
+  }
 }
-
-
-
 
 @media (min-width: 1200px) {
+  .contact-nav {
+    max-width: 1300px;
+  }
 
-    .contact-nav {
-        max-width: 1300px;
-    }
+  .view-contact {
+    max-width: 1300px;
 
-    .view-contact{
-       
-        max-width: 1300px;
-       
-        display: flex;
-        flex-direction:row;
-        align-items: start;
-        justify-content: space-around;
-        
-    }
-    .consultation-card {
-       
-        width: 500px;
-        height: 550px;
-   
-        display: grid;
-        place-content: center;
-        gap: 2rem;
-       
-        background-color: var(--clr-bg);
-        border: 1px solid var(--clr-br);
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-        padding: 2rem;
-    }
-    .contact-view-cards {
-        width: 400px;
-    }
-    .bg-container {
-        height: 600px;
-        margin-bottom: 5rem;
-    }
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+  }
+  .consultation-card {
+    width: 500px;
+    height: 550px;
 
-    .location {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .map {
-        width: 50%;
-        height: auto;
-    }
-   .adress-cards {
-    width: 300px;
-   }
- }
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+
+    background-color: var(--clr-bg);
+    border: 1px solid var(--clr-br);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  .contact-view-cards {
+    width: 400px;
+  }
+  .bg-container {
+    height: 600px;
+    margin-bottom: 5rem;
+  }
+
+  .location {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .map {
+    width: 50%;
+    height: auto;
+  }
+  .adress-cards {
+    width: 390px;
+  }
+}
