@@ -1,0 +1,47 @@
+.info-card {
+    margin: 0 auto;
+    height: 600px;
+    max-width: 1000px;
+  
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-learn {
+    text-decoration: none;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  
+  .fa-li {
+    color: var(--crl-primary);
+    width: 0;
+  }
+  
+  .info-img {
+    position: relative;
+  
+    .img-send {
+      position: absolute;
+      z-index: 20;
+      bottom: -20%;
+      left: 40%;
+    }
+  }
+  .img-card {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  
+  @media (min-width: 1200px) {
+
+  .desktop-only {
+    display: block;
+  }
+   }

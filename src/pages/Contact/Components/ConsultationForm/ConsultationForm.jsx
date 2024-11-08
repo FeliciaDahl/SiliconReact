@@ -81,7 +81,7 @@ const ConsultationForm = () => {
 
           <div className="pt-2">
             <label><h4>Specialist</h4>
-              <select className=' select consulation-input pb-2'{...register('select', { required: 'Please select one of the options' })}>
+              <select className=' select consulation-input '{...register('select', { required: 'Please select one of the options' })}>
               <option value="" disabled selected>Select a specialist</option>
                 <option value="investment">Investment Advisor</option>
                 <option value="business">Business Banking Consultant</option>

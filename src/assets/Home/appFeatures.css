@@ -1,0 +1,104 @@
+.app-features {
+    padding: 2rem;
+    margin: 0 auto;
+  
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+  }
+  .app-info {
+    display: grid;
+    grid-area: info;
+  }
+  .h2-features {
+    justify-content: center;
+  }
+  .box-img {
+    display: grid;
+    place-items: center;
+    background-color: var(--clr-bg-light);
+    opacity: 0.8;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+  }
+  .box {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr auto;
+  
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+  
+    .box-content {
+      text-align: left;
+      padding-left: 1rem;
+    }
+  }
+  .img-features {
+    display: grid;
+    position: relative;
+    width: 100%;
+    grid-area: app;
+  
+    display: none;
+  }
+  #img-iphone {
+    display: grid;
+    left: 0;
+    z-index: 100;
+  }
+  #img-card {
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    z-index: 800;
+  }
+  @media (min-width: 768px) {
+
+    /* || APP-FEATURES */
+    .app-features {
+      max-width: 720px;
+    }
+    .h2-features {
+      font-size: 34px;
+    }
+    .benefit-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (min-width: 1200px) {
+
+
+    /* || APP-FEATURES */
+    .img-features {
+      display: block;
+      padding: 2rem;
+    
+    }
+    .app-features {
+      max-width: 1300px;
+  
+      display: grid;
+      gap: 1rem;
+      justify-content: center;
+  
+      grid-template-columns: 1fr 1fr;
+  
+      grid-template-areas:
+        "app info"
+        "app info";
+    }
+  
+    .h2-features {
+      text-align: left;
+      font-size: 40px;
+    }
+    .p-features {
+      text-align: left;
+    }
+}

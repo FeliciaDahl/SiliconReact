@@ -1,0 +1,60 @@
+.contact-cards {
+    display: none;
+  }
+  .card {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--clr-br);
+    padding: 1rem;
+  }
+  .contact {
+    text-decoration: none;
+  
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+      transition: var(--transition-time);
+    }
+  }
+  .call-color{
+    color: var(--crl-primary);
+  }
+  .chat-color {
+    color: var(--clr-success);
+  }
+  
+  .btn-contact {
+    font-weight: 600;
+    justify-items: center;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  @media (min-width: 768px) {
+
+    .contact-cards {
+      display: grid;
+      width: 100%;
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+    }
+    .mobile-btn {
+      display: none;
+    }
+  
+  }
+
+  @media (min-width: 1200px) {
+
+    .contact-cards {
+      position: absolute;
+        display: grid;
+      grid-area: contact;
+      width: 90%;
+      font-size: 14px;
+     
+    }
+
+  }
+  
