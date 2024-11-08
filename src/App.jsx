@@ -5,6 +5,7 @@ import './assets/index.css'
 import './assets/contact.css'
 import './assets/global.css'
 import './assets/header.css'
+import './assets/footer.css'
 
 import Home from './pages/Home/Home'
 import Contact from './pages/Contact/Contact'

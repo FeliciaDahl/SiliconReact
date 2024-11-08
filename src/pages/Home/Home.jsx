@@ -34,7 +34,7 @@ const Home = () => {
                 </div>
             </div>
             <ButtonContact />
-            <div className="newsletter grid-2">
+            <div className="newsletter">
                 <Newsletter />
                 <SubscribeForm />
             </div>

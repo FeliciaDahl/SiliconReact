@@ -1,8 +1,3 @@
-
-
-
-
-
 /* || HERO */
 
 .hero .container {
@@ -250,7 +245,7 @@
   left: 28%;
 }
 /* || DESKTOP-ONLY */
-/* || REVIEWS */
+/* || TESTIMONIALS */
 .testimonial-card {
   position: relative;
   width: 100%;
@@ -450,26 +445,9 @@
     border-radius: 0 0.5em 0.5em 0;
   }
 }
-.footer {
-  color: var(--clr-m-text);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 
 
 @media (min-width: 768px) {
-  /* || HEADER */
-  header .container {
-    max-width: 720px;
-  }
-
-  #dark-mode {
-    display: block;
-  }
-
 
   /* || HERO */
   .hero .container {
@@ -548,12 +526,7 @@
     display: flex;
     max-width: 720px;
   }
-  /* || FOOTER */
-  .footer {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-  }
+
 }
 
 @media (min-width: 1200px) {
@@ -592,6 +565,7 @@
   #brand-2 {
     display: flex;
   }
+
   /* || APP-FEATURES */
   .img-features {
     display: block;
@@ -686,6 +660,8 @@
   .newsletter {
     max-width: 1300px;
     display: flex;
+    gap: 2rem;
+  
     align-items: center;
     justify-content: center;
     margin: 0;
