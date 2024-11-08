@@ -14,8 +14,8 @@ const NavBar = () => {
     return (
         <nav className='drop-navigation'>
             <button className="btn-nav" onClick={toggleDropdown}>
-                <img className="show-light" src="./images/header/nav-btn.svg" alt="button navigation" />
-                <img className="show-dark" src="./images/header/nav-btn-dark.svg" alt="button navigation" />
+                <img className="show-light" src="./images/Header/nav-btn.svg" alt="button navigation" />
+                <img className="show-dark" src="./images/Header/nav-btn-dark.svg" alt="button navigation" />
             </button>
 
             {isDropdownOpen && (

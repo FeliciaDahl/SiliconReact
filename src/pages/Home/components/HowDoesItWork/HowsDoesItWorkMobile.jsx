@@ -6,8 +6,8 @@ const HowsDoesItWorkMobile = () => {
     <div className="hdw-mobile">
 
     <div className="hdw-img">
-    <img id="img-mv" src="./images/hdw/screen-mobile.svg" alt="showing account balance in app " />
-    <img id="cover-mv" src="./images/hdw/case-mobile.svg" alt="" />
+    <img id="img-mv" src="./images/HowDoesItWork/screen-mobile.svg" alt="showing account balance in app " />
+    <img id="cover-mv" src="./images/HowDoesItWork/case-mobile.svg" alt="" />
     </div>
 
     <div className="hdw-content">

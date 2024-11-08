@@ -12,8 +12,8 @@ const Header = () => {
     <div className="container">
 
         <Link className='logo' to="/">
-            <img className="show-light" src="./images/header/logo-header.svg" alt="Silicon bank logo" />
-            <img className="show-dark" src="./images/header/logo-header-dark.svg" alt="Silicon bank logo" />
+            <img className="show-light" src="./images/Header/logo-header.svg" alt="Silicon bank logo" />
+            <img className="show-dark" src="./images/Header/logo-header-dark.svg" alt="Silicon bank logo" />
         </Link>
         
         <nav id="nav-f">
@@ -28,7 +28,7 @@ const Header = () => {
         </div>
 
         <div id="sign-in">
-            <NavLink className= "btn btn-sign-in" to="/signin"><img src="./images/header/icon-signin.svg" alt="Sign-in button" />
+            <NavLink className= "btn btn-sign-in" to="/signin"><img src="./images/Header/icon-signin.svg" alt="Sign-in button" />
              <span className="f-size-14">Sign in / up</span>
             </NavLink>
         </div>

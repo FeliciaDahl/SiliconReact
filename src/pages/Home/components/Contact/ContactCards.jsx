@@ -2,8 +2,8 @@ import ContactCardItems from "./ContactCardItems"
 
 const ContactCards = () => {
 const contactInfo =[
-    {icon:"./images/contact/phone-icon.svg", iconAlt:"phone icon", question:"Still have questions?", color:"call-color"},
-    {icon:"./images/contact/chat-icon.svg", iconAlt:"chat icon", question:"Don't like phone calls?", color:"chat-color"}
+    {icon:"./images/Contact/phone-icon.svg", iconAlt:"phone icon", question:"Still have questions?", color:"call-color"},
+    {icon:"./images/Contact/chat-icon.svg", iconAlt:"chat icon", question:"Don't like phone calls?", color:"chat-color"}
 ]
 
   return (

@@ -12,7 +12,7 @@ const locations = [
     ),
     phone: '(406) 555-0120',
     hours: 'Mon – Fri: 9:00 am – 22:00 am, Sat – Sun: 9:00 am – 20:00 am',
-    mapImage: '../images/view-contact/Kentuckey.jpg', 
+    mapImage: '../images/ContactView/Kentuckey.jpg', 
   },
   {
     name: 'Office New Jersey',
@@ -23,7 +23,7 @@ const locations = [
     ),
     phone: '(406) 544-0123',
     hours: 'Mon – Fri: 9:00 am – 22:00 am, Sat – Sun: 9:00 am – 20:00 am',
-    mapImage: '../images/view-contact/NewJersey.jpg', 
+    mapImage: '../images/ContactView/NewJersey.jpg', 
   },
 ];
 

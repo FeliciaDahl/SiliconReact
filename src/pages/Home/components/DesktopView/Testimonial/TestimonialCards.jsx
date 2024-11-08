@@ -6,7 +6,7 @@ const TestimonialCards = ({item}) => {
 
     <div className="testimonial-box">
     <div className="apo-icon">
-        <img src="./images/dt-info/apo-icon.svg" alt="aprostrophe sign" />
+        <img src="./images/DesktopView/apo-icon.svg" alt="aprostrophe sign" />
     </div>
   
     <div className="pt-1 ">

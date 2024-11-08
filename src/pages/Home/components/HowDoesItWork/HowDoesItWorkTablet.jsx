@@ -6,10 +6,10 @@ const HowDoesItWorkTablet = () => {
     <div className="hdw-tablet">
 
     <div className="hdw-img">
-    <img id="img-tv-1" src="./images/hdw/iPhone-1-tv.svg" alt="showing your cards in app " />
-    <img id="img-tv-2" src="./images/hdw/iphone-2-tv.svg" alt="showing account balance in app" />
-    <img id="cover-tv-2" src="./images/hdw/iphone-case-tv.svg" alt="" />
-    <img id="img-tv-3" src="./images/hdw/iPhone-3-tv.svg" alt="showing transaction in app" />
+    <img id="img-tv-1" src="./images/HowDoesItWork/iPhone-1-tv.svg" alt="showing your cards in app " />
+    <img id="img-tv-2" src="./images/HowDoesItWork/iphone-2-tv.svg" alt="showing account balance in app" />
+    <img id="cover-tv-2" src="./images/HowDoesItWork/iphone-case-tv.svg" alt="" />
+    <img id="img-tv-3" src="./images/HowDoesItWork/iPhone-3-tv.svg" alt="showing transaction in app" />
     </div>
 
     <div className="hdw-content">
