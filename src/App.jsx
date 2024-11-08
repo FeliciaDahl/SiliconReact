@@ -17,6 +17,8 @@ import './assets/Home/faq.css'
 import './assets/Home/contactCards.css'
 import './assets/Home/subscribe.css'
 
+import './assets/Contact/contactUs.css'
+
 
 import Home from './pages/Home/Home'
 import Contact from './pages/Contact/Contact'
