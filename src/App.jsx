@@ -7,6 +7,9 @@ import './assets/global.css'
 import './assets/header.css'
 import './assets/footer.css'
 
+import './assets/Home/hero.css'
+import './assets/Home/partners.css'
+
 import Home from './pages/Home/Home'
 import Contact from './pages/Contact/Contact'
 import Feature from './pages/Feature/Feature'

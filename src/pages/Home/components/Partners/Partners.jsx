@@ -14,7 +14,7 @@ const Partners = () => {
 
 <section aria-label="partners" id="brand-icons">
 <div className="container">
-<div className="icons flex-2">
+<div className="icons">
 
 {
     partnersImg.map((item, index) => (<PartnerItems key={index} item={item} /> ))
