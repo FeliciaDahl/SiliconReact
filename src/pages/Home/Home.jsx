@@ -10,6 +10,7 @@ import ContactCards from './components/Contact/ContactCards'
 import ButtonContact from './components/Contact/ButtonContact'
 import Newsletter from './components/Subscribe/Newsletter'
 import SubscribeForm from './components/Subscribe/SubscribeForm'
+import Header from '../../components/Header/Header'
 
 
 
@@ -19,8 +20,8 @@ import SubscribeForm from './components/Subscribe/SubscribeForm'
 const Home = () => {
     return (
         <>
-    
         <Hero />
+     
         <Partners />
         <Features />
         <HowDoesItWork />

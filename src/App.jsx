@@ -36,6 +36,7 @@ function App() {
   return (
 
   <BrowserRouter>
+   
     <div className="wrapper">
       <Header />
       <main>

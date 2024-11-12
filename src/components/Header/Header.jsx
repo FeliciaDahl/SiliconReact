@@ -6,9 +6,9 @@ import NavBar from './NavBar'
 const Header = () => {
   return (
    <>
-  
+ 
     <header aria-label="main-navigation">
-   
+    <div className='head-bg-t'>
     <div className="container">
 
         <Link className='logo' to="/">
@@ -34,6 +34,7 @@ const Header = () => {
         </div>
 
         <NavBar/>
+        </div>
 </div>
 
 
