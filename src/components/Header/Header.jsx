@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import DarkModeSwitch from './DarkModeSwitch'
-import NavBar from './NavBar'
+import NavBar from './DropMenu'
 
 const Header = () => {
   return (
    <>
  
     <header aria-label="main-navigation">
-    <div className='head-bg-t'>
+    <div className='head-bg'>
     <div className="container">
 
         <Link className='logo' to="/">

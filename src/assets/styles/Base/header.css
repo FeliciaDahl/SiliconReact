@@ -1,27 +1,15 @@
-/* || HEADER */
 
-
-
-
-.head-bg {
-    background: rgb(99, 102, 241);
-    background: linear-gradient(
-      0deg,
-      rgba(99, 102, 241, 0.07) 0%,
-      rgba(218, 70, 239, 0.05) 42%,
-      rgba(241, 244, 253, 0.1) 83%
-    );
-  }
-  .head-bg-t
+  .head-bg
   {
-    background: rgb(99, 102, 241);
     background: linear-gradient(
       0deg,
-      rgba(99, 102, 241, 0.07) 0%,
+      rgba(241, 244, 253, 0.08) 0%,
       rgba(218, 70, 239, 0.05) 42%,
-      rgba(241, 244, 253, 0.1) 83%
+      rgba(99, 102, 241, 0.07) 83%
+     
     );
-  }
+}
+  
   header .container {
    
     display: grid;
@@ -121,7 +109,7 @@
   .btn-nav {
    
     border: none;
-    background-color: var(--clr-nav-btn);
+    background-color: transparent;
     border-radius: 5px;
   
     &:hover, &:focus-visible {

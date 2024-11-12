@@ -1,23 +1,26 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './assets/colors.css'
-import './assets/global.css'
-import './assets/contact.css'
 
-import './assets/header.css'
-import './assets/footer.css'
+import './assets/styles/Base/colors.css'
+import './assets/styles/Base/global.css'
 
-import './assets/Home/hero.css'
-import './assets/Home/partners.css'
-import './assets/Home/appFeatures.css'
-import './assets/Home/howDoesItWork.css'
-import './assets/Home/desktopView/infoCards.css'
-import './assets/Home/desktopView/testimonials.css'
-import './assets/Home/faq.css'
-import './assets/Home/contactCards.css'
-import './assets/Home/subscribe.css'
+import './assets/styles/Base/footer.css'
+import './assets/styles/Base/header.css'
 
-import './assets/Contact/contactUs.css'
+
+import './assets/styles/Home/hero.css'
+import './assets/styles/Home/partners.css'
+import './assets/styles/Home/appFeatures.css'
+import './assets/styles/Home/howDoesItWork.css'
+import './assets/styles/Home/desktopView/infoCards.css'
+import './assets/styles/Home/desktopView/testimonials.css'
+import './assets/styles/Home/faq.css'
+import './assets/styles/Home/contactCards.css'
+import './assets/styles/Home/subscribe.css'
+
+import './assets/styles/Contact/contactUs.css'
+import './assets/styles/Contact/consultationForm.css'
+import './assets/styles/Contact/findUs.css'
 
 
 import Home from './pages/Home/Home'

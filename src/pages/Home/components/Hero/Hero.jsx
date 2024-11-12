@@ -4,7 +4,7 @@ const Hero = () => {
   return (
   
 <section aria-label="hero" className="hero">
-<div className='head-bg'>
+<div className='head-bg-hero'>
 <div className="container">
 
 <div className="hero-h1 pt-2">

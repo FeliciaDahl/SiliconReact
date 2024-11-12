@@ -1,4 +1,13 @@
+.head-bg-hero {
 
+  background: rgb(99, 102, 241);
+  background: linear-gradient(
+    0deg,
+    rgba(99, 102, 241, 0.07) 0%,
+    rgba(218, 70, 239, 0.05) 42%,
+    rgba(241, 244, 253, 0.08) 83%
+  );
+}
 
 .hero .container {
     width: 100%;

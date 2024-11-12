@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const NavBar = () => {
+const DropMenu = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -30,4 +30,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default DropMenu;

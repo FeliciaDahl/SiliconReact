@@ -11,7 +11,8 @@ const locations = [
       </Link>
     ),
     phone: '(406) 555-0120',
-    hours: 'Mon – Fri: 9:00 am – 22:00 am, Sat – Sun: 9:00 am – 20:00 am',
+    hours1: 'Mon – Fri: 9:00 am – 22:00 am',
+    hours2: 'Sat – Sun: 9:00 am – 20:00 am',
     mapImage: '../images/ContactView/Kentuckey.jpg', 
   },
   {
@@ -22,7 +23,8 @@ const locations = [
       </Link>
     ),
     phone: '(406) 544-0123',
-    hours: 'Mon – Fri: 9:00 am – 22:00 am, Sat – Sun: 9:00 am – 20:00 am',
+    hours1: 'Mon – Fri: 9:00 am – 22:00 am', 
+    hours2: 'Sat – Sun: 9:00 am – 20:00 am',
     mapImage: '../images/ContactView/NewJersey.jpg', 
   },
 ];
