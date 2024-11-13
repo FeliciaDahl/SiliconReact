@@ -1,18 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext} from 'react'
 import FaqAccordionItems from './FaqAccordionItems'
+import { FaqContext } from '../../../../components/contexts/FaqContext'
 
 const Faq = () => {
-    const [accordionItems, setAccordionItems] = useState([])
+const {accordionItems} = useContext(FaqContext)
+    // const [accordionItems, setAccordionItems] = useState([])
 
-    const fetchData =  async () => {
-        const res = await fetch ('https://win24-assignment.azurewebsites.net/api/faq')
-        const data = await res.json()
-        setAccordionItems(data)
-    } 
+//     const fetchData =  async () => {
+//         const res = await fetch ('https://win24-assignment.azurewebsites.net/api/faq')
+//         const data = await res.json()
+//         setAccordionItems(data)
+//     } 
 
-useEffect(() => {
-    fetchData()
-}, [])
+// useEffect(() => {
+//     fetchData()
+// }, [])
     
   return (
 
