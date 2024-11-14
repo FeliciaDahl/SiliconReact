@@ -10,36 +10,30 @@ import ContactCards from './components/Contact/ContactCards'
 import ButtonContact from './components/Contact/ButtonContact'
 import Newsletter from './components/Subscribe/Newsletter'
 import SubscribeForm from './components/Subscribe/SubscribeForm'
-import Header from '../../components/Header/Header'
-
-
-
-
 
 
 const Home = () => {
     return (
         <>
-        <Hero />
-     
-        <Partners />
-        <Features />
-        <HowDoesItWork />
-        <InfoCardsDesktop />
-        <Testimonials />
-        <section aria-label="frequently asked questions" className="faq">
-            <div className="container">
-                <div className="desktop-layout">
-                    <Faq />
-                    <ContactCards />
-                </div>
+    <Hero />
+    <Partners />
+    <Features />
+    <HowDoesItWork />
+    <InfoCardsDesktop />
+    <Testimonials />
+    <section aria-label="frequently asked questions" className="faq">
+        <div className="container">
+            <div className="desktop-layout">
+                <Faq />
+                <ContactCards />
             </div>
-            <ButtonContact />
-            <div className="newsletter">
-                <Newsletter />
-                <SubscribeForm />
-            </div>
-        </section>
+        </div>
+        <ButtonContact />
+        <div className="newsletter">
+            <Newsletter />
+            <SubscribeForm />
+        </div>
+    </section>
 
         </>
     )

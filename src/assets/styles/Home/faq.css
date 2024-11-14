@@ -9,8 +9,6 @@
     margin: 0 auto;
   }
   
-  /* || FAQ ACCORDION */
-  
   .faq-accordion {
     width: 90%;
     margin: 0 auto;
@@ -76,7 +74,6 @@
 
   @media (min-width: 768px) {
 
-    /* || FAQ */
     .faq {
       max-width: 720px;
     }
@@ -84,8 +81,6 @@
   
   }
   @media (min-width: 1200px) {
-
-    /* || FAQ */
    
     .faq {
       padding-top: 3rem;

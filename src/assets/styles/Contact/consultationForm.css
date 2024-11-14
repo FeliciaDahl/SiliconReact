@@ -5,13 +5,8 @@
   }
   
   .consulation-input {
-    display: grid;
-    place-content: center;
     width: 90%;
-    font-size: 16px;
-    padding: 0.5em;
-    border-radius: 5px;
-    border: 0.5px solid var(--clr-br);
+ 
   }
   .btn-appointment {
     width: 90%;
@@ -51,6 +46,7 @@
   
   .input-error {
     font-size: 12px;
+    display: inline-block;
     color: var(--clr-error);
   }
 

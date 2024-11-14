@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 
 const FaqAccordionItems = ({ item }) => {
 
- const [isExpanded, setIsExpanded]= useState(false)
+const [isExpanded, setIsExpanded] = useState(false)
 
- const toggleExpansion = () => {
+const toggleExpansion = () => {
     setIsExpanded(prev => !prev)
- }
+}
 
-    return (
+return (
     <div className={`faq-card ${isExpanded ? 'answer-open' : ''}`}>
         <div className="question">
             <h3>{item.title}</h3>
@@ -16,8 +16,9 @@ const FaqAccordionItems = ({ item }) => {
                 <i className="fa-solid fa-chevron-down"></i>
             </button>
         </div>
+        
         <div className="answer">
-        <div className="expand">
+            <div className="expand">
                 <p>{item.content}</p>
             </div>
         </div>

@@ -16,6 +16,7 @@ import './assets/styles/Home/desktopView/testimonials.css'
 import './assets/styles/Home/faq.css'
 import './assets/styles/Home/contactCards.css'
 import './assets/styles/Home/subscribe.css'
+import './assets/styles/FAQ/faqView.css'
 
 import './assets/styles/Contact/contactUs.css'
 import './assets/styles/Contact/consultationForm.css'
@@ -32,32 +33,27 @@ import SignIn from './pages/SignIn/SignIn'
 
 import FaqProvider from './components/contexts/FaqContext'
 
-
-
-
-
-
 function App() {
 
 
   return (
 
-    <FaqProvider>
-  <BrowserRouter>
-    <div className="wrapper">
-      <Header />
-      <main>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/feature' element={<Feature />} />
-          <Route path='/FAQ' element={<FaqView />} />
-          <Route path='/signin' element={<SignIn />} />
-        </Routes>
-      </main>
+  <FaqProvider>
+    <BrowserRouter>
+      <div className="wrapper">
+        <Header />
+        <main>
+          <Routes>
+           <Route path='/' element={<Home />} />
+           <Route path='/contact' element={<Contact />} />
+            <Route path='/feature' element={<Feature />} />
+            <Route path='/FAQ' element={<FaqView />} />
+           <Route path='/signin' element={<SignIn />} />
+         </Routes>
+        </main>
         <Footer />  
       </div>
-  </BrowserRouter>
+   </BrowserRouter>
   </FaqProvider>
   )
 }

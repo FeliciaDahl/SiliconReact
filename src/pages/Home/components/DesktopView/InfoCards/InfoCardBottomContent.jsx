@@ -20,7 +20,7 @@ const InfoCardBottomContent = () => {
         </div>
     </div>
 
-)
+    )
 }
 
 export default InfoCardBottomContent

@@ -5,7 +5,10 @@ import { useForm } from 'react-hook-form'
 const ConsultationForm = () => {
 
   const [submitted, setSubmitted] = useState(false)
-  const { register, handleSubmit, formState: { errors }, reset } = useForm()
+  const { register, handleSubmit, formState: { errors }, reset } = useForm({
+    defaultValues: { select: "" }
+  })
+
 
   const handleOk = () => {
     setSubmitted(false)
@@ -59,7 +62,7 @@ const ConsultationForm = () => {
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
           <div className="pt-2">
             <label><h4>Full name</h4>
-              <input className='consulation-input' type='text' {...register('name', {
+              <input className='input consulation-input' type='text' {...register('name', {
                 required: 'The name field is required', pattern: {
                   value: /^(?=.*[A-Za-zÀ-ÿ]{2})(?=.*[ '-][A-Za-zÀ-ÿ]{2})[A-Za-zÀ-ÿ]{2,}([ '-][A-Za-zÀ-ÿ]{2,}){1,}$/,
                   message: 'Please enter both your first and last name, each with min 2 letters'
@@ -70,7 +73,7 @@ const ConsultationForm = () => {
 
           <div className="pt-2">
             <label><h4>Email adress</h4>
-              <input className='consulation-input'{...register('email', {
+              <input className='input consulation-input'{...register('email', {
                 required: 'The email field is required', pattern: {
                   value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                   message: 'Please enter a valid email address'
@@ -81,8 +84,8 @@ const ConsultationForm = () => {
 
           <div className="pt-2">
             <label><h4>Specialist</h4>
-              <select className=' select consulation-input '{...register('select', { required: 'Please select one of the options' })}>
-              <option value="" disabled selected>Select a specialist</option>
+              <select className='select input consulation-input '{...register('select', { required: 'Please select one of the options' })}>
+              <option value="" disabled>Select a specialist</option>
                 <option value="investment">Investment Advisor</option>
                 <option value="business">Business Banking Consultant</option>
                 <option value="technical">Technical support</option>

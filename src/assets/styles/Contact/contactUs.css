@@ -2,28 +2,14 @@
     background-color: var(--clr-bg-light);
   }
   
-  .contact-nav {
-    margin: 0 1rem;
-    align-items: center;
-    color: var(--clr-bd-text);
-  }
-  
-  .contact-link-top {
-    text-decoration: none;
-    color: var(--clr-bd-text);
-    &:hover,
-    &:focus-visible {
-      color: var(--crl-primary);
-      transition: var(--transition-time);
-    }
-  }
+
   .view-contact {
     place-items: center;
     margin: 0 1rem;
     justify-content: center;
   }
   .contact-header {
-    margin: 0 1rem;
+  
     font-size: 40px;
     font-weight: 800;
   }
@@ -46,12 +32,7 @@
   }
   
   @media (min-width: 768px) {
-    .contact-nav {
-      max-width: 720px;
-      padding-left: 1rem;
-      margin: 0 auto;
-    }
-  
+
     .view-contact {
       max-width: 720px;
       margin: 0 auto;
@@ -61,12 +42,8 @@
 
 @media (min-width: 1200px) {
 
-    .contact-nav {
-      font-size: .8rem;
-      max-width: 1300px;
-      padding-left: 1rem;
-    }
-      .bg-container {
+ 
+    .bg-container {
       height: 600px;
       margin-bottom: 5rem;
     }

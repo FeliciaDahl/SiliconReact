@@ -12,11 +12,11 @@ const Contact = () => {
       <div className="bg-container">
 
 
-          <nav className='contact-nav flex-1 pb-2 pt-2'>
+          <nav className='breadcrumb-nav flex-1 pb-2 pt-2'>
             <i className="fa-regular fa-house"></i>
-            <NavLink className="contact-link-top" to="/">Homepage</NavLink>
+            <NavLink className="breadcrumb-link" to="/">Homepage</NavLink>
             <i className="fa-regular fa-angles-right"></i>
-            <NavLink className="contact-link-top" to="/contact">Contact</NavLink>
+            <NavLink className="breadcrumb-link" to="/contact">Contact</NavLink>
           </nav>
 
           <div className="view-contact pt-1 ">

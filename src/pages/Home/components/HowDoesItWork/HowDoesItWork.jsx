@@ -5,19 +5,19 @@ import HowDoesItWorkDesktop from './HowDoesItWorkDesktop'
 
 const HowDoesItWork = () => {
   return (
-   
-<section aria-label="how does it work" className="HowDoesItWork">
 
-<div className="container">
-<h2 className="hdw-h2 pb-2">How does it work?</h2>
+    <section aria-label="how does it work" className="HowDoesItWork">
 
-<HowsDoesItWorkMobile/>
+      <div className="container">
+        <h2 className="hdw-h2 pb-2">How does it work?</h2>
 
-<HowDoesItWorkTablet/>
+        <HowsDoesItWorkMobile />
 
-<HowDoesItWorkDesktop/>
-</div>
-</section>
+        <HowDoesItWorkTablet />
+
+        <HowDoesItWorkDesktop />
+      </div>
+    </section>
   )
 }
 
