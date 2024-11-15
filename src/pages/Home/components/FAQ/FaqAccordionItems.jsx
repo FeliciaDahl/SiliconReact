@@ -12,7 +12,7 @@ return (
     <div className={`faq-card ${isExpanded ? 'answer-open' : ''}`}>
         <div className="question">
             <h3>{item.title}</h3>
-            <button onClick={toggleExpansion} className="btn-circle">
+            <button aria-label="expand" onClick={toggleExpansion} className="btn-expand">
                 <i className="fa-solid fa-chevron-down"></i>
             </button>
         </div>

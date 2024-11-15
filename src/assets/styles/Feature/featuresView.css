@@ -1,0 +1,35 @@
+.feature-view {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .feature-view {
+    max-width: 720px;
+    margin: 0 auto;
+    align-items: start;
+  }
+
+  .feature-content {
+    margin: 0 auto;
+  }
+  .feature-header {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature-view {
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: start;
+    gap: 3rem;
+  }
+
+  .feature-content {
+    font-size: 20px;
+  }
+}

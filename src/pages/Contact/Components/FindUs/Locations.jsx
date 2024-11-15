@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import LocationItem from './LocationItems'; 
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import LocationItem from './LocationItems'
+import { Link } from 'react-router-dom'
 
 const locations = [
   {
@@ -27,10 +27,10 @@ const locations = [
     hours2: 'Sat – Sun: 9:00 am – 20:00 am',
     mapImage: '../images/ContactView/NewJersey.jpg', 
   },
-];
+]
 
 const LocationComponent = () => {
-  const [selectedLocation, setSelectedLocation] = useState(locations[0]);
+  const [selectedLocation, setSelectedLocation] = useState(locations[0])
 
   return (
     <div className="location pt-2 pb-2">
@@ -41,7 +41,7 @@ const LocationComponent = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LocationComponent;
+export default LocationComponent

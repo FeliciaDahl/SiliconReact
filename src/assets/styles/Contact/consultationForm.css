@@ -1,69 +1,67 @@
 .consultation-card {
-    background-color: var(--clr-bg-light);
-    width: 100%;
+  background-color: var(--clr-bg-light);
+  width: 100%;
+  padding: 2rem;
+}
+
+.consulation-input {
+  width: 90%;
+}
+.btn-appointment {
+  width: 90%;
+}
+
+.submitted-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.submitted-card {
+  background: var(--clr-bg);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+
+  i {
+    color: var(--crl-primary);
+    font-size: 7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.submitted-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-error {
+  font-size: 12px;
+  display: inline-block;
+  color: var(--clr-error);
+}
+
+@media (min-width: 1200px) {
+  .consultation-card {
+    width: 500px;
+    height: 550px;
+
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+
+    background-color: var(--clr-bg);
+    border: 1px solid var(--clr-br);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
   }
-  
-  .consulation-input {
-    width: 90%;
- 
-  }
-  .btn-appointment {
-    width: 90%;
-  }
-  
-  .submitted-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .submitted-card {
-    background: var(--clr-bg);
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-  
-    i {
-      color: var(--crl-primary);
-      font-size: 7em;
-      padding-top: 1rem;
-      padding-bottom: 2rem;
-    }
-  }
-  
-  .submitted-btn {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .input-error {
-    font-size: 12px;
-    display: inline-block;
-    color: var(--clr-error);
-  }
-
-  @media (min-width: 1200px) {
-    
-    .consultation-card {
-        width: 500px;
-        height: 550px;
-    
-        display: grid;
-        place-content: center;
-        gap: 2rem;
-    
-        background-color: var(--clr-bg);
-        border: 1px solid var(--clr-br);
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 2rem;
-      }
-    }
+}

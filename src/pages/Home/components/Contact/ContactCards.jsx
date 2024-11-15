@@ -16,8 +16,7 @@ const ContactCards = () => {
             icon={info.icon}
             iconAlt={info.iconAlt}
             question={info.question}
-            color={info.color} />
-        ))
+            color={info.color} /> ))
       }
 
     </div>

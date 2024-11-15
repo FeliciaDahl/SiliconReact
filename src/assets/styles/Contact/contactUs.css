@@ -1,63 +1,50 @@
-.bg-container {
-    background-color: var(--clr-bg-light);
-  }
-  
-
-  .view-contact {
-    place-items: center;
-    margin: 0 1rem;
-    justify-content: center;
-  }
-  .contact-header {
-  
-    font-size: 40px;
-    font-weight: 800;
-  }
-  
-  .contact-icon {
-    display: grid;
-    color: var(--crl-primary);
-    background-color: var(--clr-bg);
-    place-items: center;
-    padding: 1rem;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  .contact-link {
-    text-decoration: none;
-    align-items: center;
-    color: var(--crl-primary);
-  }
-  
-  @media (min-width: 768px) {
-
-    .view-contact {
-      max-width: 720px;
-      margin: 0 auto;
-      
-    }
+.view-contact {
+  place-items: center;
+  margin: 0 1rem;
+  justify-content: center;
 }
 
+.contact-icon {
+  display: grid;
+  color: var(--crl-primary);
+  background-color: var(--clr-bg);
+  place-items: center;
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.contact-link {
+  text-decoration: none;
+  align-items: center;
+  color: var(--crl-primary);
+}
+
+@media (min-width: 768px) {
+  .view-contact {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+.contact-header {
+  font-size: 48px;
+}
 @media (min-width: 1200px) {
+  .bg-light {
+    height: 600px;
+    margin-bottom: 5rem;
+  }
+  .view-contact {
+    max-width: 1300px;
 
- 
-    .bg-container {
-      height: 600px;
-      margin-bottom: 5rem;
-    }
-    .view-contact {
-      max-width: 1300px;
-  
-      display: flex;
-      flex-direction: row;
-      align-items: start;
-      justify-content: space-around;
-    }
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+  }
 
-    .contact-view-cards {
-      width: 400px;
-    }
-
+  .contact-view-cards {
+    width: 400px;
+  }
 }

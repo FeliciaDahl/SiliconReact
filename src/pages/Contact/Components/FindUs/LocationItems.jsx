@@ -26,7 +26,7 @@ const LocationItems = ({ location, onClick }) => {
       </div>
     </div>
   </div>
-);
-};
+)
+}
 
 export default LocationItems
